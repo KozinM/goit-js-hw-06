@@ -5,15 +5,14 @@ const nameInputElement = document.querySelector("#name-input");
 const nameOutputElement = document.querySelector("#name-output");
 //console.log(nameInputElement);
 
-//пописываю слушателя на элемент ввода  
+//пописываю слушателя на элемент ввода
 nameInputElement.addEventListener("input", inputChangeHandler);
 
 //определяю функцию по обработке ввода в элемент ввода
 function inputChangeHandler(event) {
-    if ( event.currentTarget.value != "") {
-        nameOutputElement.textContent = event.currentTarget.value;
-    }
-    else {
-        nameOutputElement.textContent = "Anonymous";
-    }
+  if (event.currentTarget.value != "") {
+    nameOutputElement.textContent = event.currentTarget.value;
+  } else {
+    nameOutputElement.textContent = "Anonymous";
   }
+}
