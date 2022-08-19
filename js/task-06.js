@@ -8,8 +8,9 @@ inputElement.addEventListener("blur", inputBlurHandler);
 //creating function for handling blur event for input element
 
 function inputBlurHandler(event) {
-  console.log(event.currentTarget.value.length);
-  if (event.currentTarget.value.length === 6) {
+  //console.log(event.currentTarget.value.length);
+  //console.log("dataset: " + event.currentTarget.dataset.length);
+  if (event.currentTarget.value.length == event.currentTarget.dataset.length) {
     inputElement.classList.add("valid");
     inputElement.classList.remove("invalid");
   } else {

@@ -24,7 +24,7 @@ buttonIncrement.addEventListener("click", btIncrementClickHandler);
 // определение функции обработчика события нажатия на кнопку декремента
 
 function btDecrementClickHandler() {
-  counterValue--;
+  counterValue-=1;
   counterDisplay.innerHTML = counterValue;
   //console.log(counterValue);
 }
@@ -32,7 +32,7 @@ function btDecrementClickHandler() {
 // определение функции обработчика события нажатия на кнопку инкремента
 
 function btIncrementClickHandler() {
-  counterValue++;
+  counterValue+=1;
   counterDisplay.innerHTML = counterValue;
   //console.log(counterValue);
 }
