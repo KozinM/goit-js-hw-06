@@ -10,7 +10,7 @@ inputElement.addEventListener("blur", inputBlurHandler);
 function inputBlurHandler(event) {
   //console.log(event.currentTarget.value.length);
   //console.log("dataset: " + event.currentTarget.dataset.length);
-  if (event.currentTarget.value.length == event.currentTarget.dataset.length) {
+  if (event.currentTarget.value.length === parseInt(event.currentTarget.dataset.length)) {
     inputElement.classList.add("valid");
     inputElement.classList.remove("invalid");
   } else {
